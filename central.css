@@ -1,0 +1,133 @@
+    /*---------------------------Desktop-------------------------*/
+
+@media (min-width:500px){
+   body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+ 
+   background-color: palevioletred;
+}
+conteneur{
+    position: absolute;
+    height: 100%; 
+    width: 100%;  
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    
+    text-align: center;
+    background-color: black;
+    flex-wrap: wrap;
+    
+}
+
+conteneur *:hover{
+   
+      transition-property: font-size;
+      transition-duration: 4s;
+      transition-delay: 0s;
+      font-size: 36px;
+
+
+}
+conteneur *{
+   
+      transition-property: font-size;
+      transition-duration: 4s;
+      transition-delay: 0s;
+      font-size: 10px;
+
+
+}
+
+header{
+     height: 10%;
+     flex:100% 0 1;
+    background-color: red;
+    border: 3px solid palevioletred;  
+    border-radius:5px;  
+    }
+nav{
+    height: 75%;
+    background-color: blue;
+    flex:10em 0 1;
+    border:3px solid palevioletred;  
+    border-radius: 30px;  
+    }
+content{
+     
+    background-color: orangered; 
+    flex:2.5em 10 1; 
+    border: 3px solid palevioletred;  
+    border-radius: 30px;  
+    }
+footer{
+     height: 10%;
+     flex:100% 0 1;
+    background-color: yellow;
+    border: 3px solid palevioletred;  
+    border-radius: 30px;  
+    }
+
+    /*---------------------------mobile-------------------------*/
+
+}   
+@media (max-width:499px){
+   body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+ 
+   background-color: palevioletred;
+}
+conteneur{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    width: 100%
+}
+
+/**:hover{
+    -webkit-transition: property duration timing-function delay;
+    -moz-transition: property duration timing-function delay;
+    transition: property duration timing-function delay;;
+
+}*/
+
+header{
+    background-color: red;
+      flex:2.5em 0 1 ;
+       border: 3px solid palevioletred;  
+       border-radius:5px;  
+    }
+nav{
+    background-color: blue;
+      flex:2.5em 0 1 ;
+       border: 3px solid palevioletred;  
+       border-radius: 30px;  
+       order: 2;
+    }
+content{
+    background-color: orangered; 
+      flex:2.5em 10 1 ; 
+      border: 3px solid palevioletred;  
+       border-radius: 30px;  
+    }
+footer{
+    background-color: yellow;
+    flex:2.5em 0 1 ;
+     border: 3px solid palevioletred;  
+       border-radius: 30px;  
+       order: 2;
+    }
+}   
